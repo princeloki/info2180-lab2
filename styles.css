@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  font-size: 18px;
+  color: #2D3748;
+  font-family: BlinkMacSystemFont,Segoe UI, Roboto, Helvetica Neue,
+  Arial, Noto Sans, sans-serif;
+}
+
+.container{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1f 5f 1f;
+  grid-template-areas:
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+}
+
+header{
+  display: flex;
+  grid-area: header;
+  background:#63B3ED;
+  color: #FFF;
+  font-family: Georgia, Times New Roman, Times, serif;
+  text-align: center;
+  line-height: 1em;
+  width: 80%;
+  padding: 20px 10% 10px 10%;
+  margin-bottom: 20px;
+}
+
+header h1{
+  font-size: 2em;
+}
+header p{
+  font-size: 0.9em;
+}
+header img{
+
+  border-radius: 50%;
+}
+
+main{
+  margin-left: 10%;
+  padding: 10px;
+  padding-right: 15%;
+  grid-area: main;
+}
+
+article h2{
+  color: #48BB78;
+}
+article .date{
+  font-size: 0.7em;
+  color: #718096;
+}
+
+article#article1 img{
+  float: right;
+}
+
+article#article1 p:nth-of-type(2){
+  float: left;
+}
+
+article#article2 p:nth-of-type(2){
+  float right;
+}
+article#article2 img{
+  float: left;
+}
+article .bimg{
+  padding: 10px;
+  width: 40%;
+  height: auto;
+}
+
+aside{
+  margin-right: 10%;
+  padding: 10px;
+  grid-area: sidebar;
+}
+
+aside li{
+  list-style: none;
+}
+
+aside li ul a{
+  text-decoration: none;
+  color:
+}
+
+aside #About{
+  color: #000000;
+  background: #E2E8F0;
+  padding: 8px;
+}
+aside #SocialMedia, #Archives h2{
+  color: #48BB78;
+}
+aside #SocialMedia a{
+  color: #4299E1;
+}
+
+aside #Archives a{
+  color: #4299E1;
+}
+
+footer{
+  margin-top: 80px;
+  color: #FFF;
+  background: #2C5282;
+  padding-left: 10%;
+  grid-area: footer;
+}
